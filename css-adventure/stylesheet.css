@@ -1,0 +1,23 @@
+html{
+ margin: 5%;
+}
+
+body{
+   text-align: center;
+   vertical-align: middle;
+}
+
+p{
+    font-size: 25px;
+}
+
+a{
+    font-size: 20px;
+}
+
+.image-style{
+    display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+}

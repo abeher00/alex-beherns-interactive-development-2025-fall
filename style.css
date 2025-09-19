@@ -1,0 +1,17 @@
+html{
+    background-color: #2e004d;
+}
+
+.text{
+    color: rgb(22, 188, 122);
+
+}
+
+.link{
+    color: rgb(151, 255, 144);
+    
+}
+
+.link:hover{
+    color: rgb(22, 188, 122);
+}
