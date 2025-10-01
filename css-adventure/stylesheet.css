@@ -1,5 +1,7 @@
 html{
  background-color: #72ac7f;
+ font-size: 10px;
+ line-height: 1.5;
 }
 
 @font-face {
@@ -17,6 +19,8 @@ html{
 #newfont{
     font-family: 'ari-w9500';
 }
+
+
 
 #frame-top{
     width: 100%;
@@ -43,13 +47,6 @@ html{
     bottom: 0px;
 }
 
-h1{
-margin-top: 30px;
-align-content: center;
-font-family: ari-w9500-bold;
-font-size: calc(1rem + 1.5vw)
-}
-
 #frame-right{
     width: 20px;
     height: 100%;
@@ -59,25 +56,33 @@ font-size: calc(1rem + 1.5vw)
     top: 0px;
 }
 
+
+h1{
+font-family: ari-w9500-bold;
+font-size: 2rem;
+margin:auto;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+
+
 body{
-    width: 100%;
-    height:100%;
+  
     font-family: ari-w9500;
     font-weight: normal;
    text-align: center;
    vertical-align: middle;
 }
 
-p{
-    font-size: calc(1rem + .8vw)
-}
 
 .text-box{
-    width: 40%;
-    min-width: 400px;
+    width: calc(40% - 40px);
+    min-width: 360px;
+    max-width: 860px;
     height: fit-content;
     background-color: #585e59;
-    border: 5px solid #383e3e;
+    border: 10px solid #383e3e;
     align-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -88,13 +93,85 @@ p{
 }
 
 a{
-    font-size: calc(1rem + .6vw)
+
 }
 
 .image-style{
     display: block;
 margin-left: auto;
 margin-right: auto;
-width: 40%;
-min-width: 440px;
+width: calc(40% - 40px);
+min-width: 360px;
+max-width: 860px;
+border: 10px solid #383e3e;
+
+}
+
+
+@media screen and (max-width: 4000px){
+    h1{
+       font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 1800px){
+    h1{
+       font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    h1{
+       font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 1330px){
+    h1{
+       font-size: 2.5rem;
+    }
+}
+
+
+@media screen and (max-width: 1080px){
+    h1{
+       font-size: 2rem;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 4000px){
+    .text-box{
+       font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 1800px){
+    .text-box{
+       font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    .text-box{
+       font-size: 2.5rem;
+    }
+}
+
+
+@media screen and (max-width: 1330px){
+    .text-box{
+       font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 1080px){
+    .text-box{
+       font-size: 1.5rem;
+    }
 }
