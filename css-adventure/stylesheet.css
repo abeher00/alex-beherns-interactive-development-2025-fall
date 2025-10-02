@@ -1,8 +1,10 @@
 html{
- background-color: #72ac7f;
  font-size: 10px;
  line-height: 1.5;
+ background-size: 40%;
+ 
 }
+
 
 @font-face {
     font-family:'ari-w9500';
@@ -25,7 +27,7 @@ html{
 #frame-top{
     width: 100%;
     height: 20px;
-    background-color: #34634b;
+    background-color: #296cc0;
     position: fixed;
     top: 0px;
 }
@@ -33,7 +35,7 @@ html{
 #frame-left{
     width: 20px;
     height: 100%;
-    background-color: #34634b;
+    background-color: #296cc0;
     position: fixed;
     left: 0px;
     top: 0px;
@@ -42,7 +44,7 @@ html{
 #frame-bottom{
     width: 100%;
     height: 20px;
-    background-color: #34634b;
+    background-color: #296cc0;
     position: fixed;
     bottom: 0px;
 }
@@ -50,7 +52,7 @@ html{
 #frame-right{
     width: 20px;
     height: 100%;
-    background-color: #34634b;
+    background-color: #296cc0;
     position: fixed;
     right: 0px;
     top: 0px;
@@ -73,7 +75,10 @@ body{
     font-weight: normal;
    text-align: center;
    vertical-align: middle;
+   
+   
 }
+
 
 
 .text-box{
@@ -83,6 +88,7 @@ body{
     height: fit-content;
     background-color: #585e59;
     border: 10px solid #383e3e;
+    color: white;
     align-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -90,10 +96,38 @@ body{
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: calc(1.5rem + .5vw);
+}
+
+
+.text-box-small{
+    width: calc(40% - 40px);
+   width: fit-content;
+    height: fit-content;
+    background-color: #585e59;
+    border: 10px solid #383e3e;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-size: calc(1.2rem + .5vw);
+}
+
+
+
+
+
+a:visited{
+    color: rgb(143, 218, 114);
+}
+a:hover{
+    color: rgb(183, 255, 155);
 }
 
 a{
-
+    color: white;
 }
 
 .image-style{
@@ -103,7 +137,7 @@ margin-right: auto;
 width: calc(40% - 40px);
 min-width: 360px;
 max-width: 860px;
-border: 10px solid #383e3e;
+border: 10px solid #000000;
 
 }
 
@@ -140,38 +174,3 @@ border: 10px solid #383e3e;
     }
 }
 
-
-
-
-
-@media screen and (max-width: 4000px){
-    .text-box{
-       font-size: 3.5rem;
-    }
-}
-
-@media screen and (max-width: 1800px){
-    .text-box{
-       font-size: 3rem;
-    }
-}
-
-@media screen and (max-width: 1600px){
-    .text-box{
-       font-size: 2.5rem;
-    }
-}
-
-
-@media screen and (max-width: 1330px){
-    .text-box{
-       font-size: 2rem;
-    }
-}
-
-
-@media screen and (max-width: 1080px){
-    .text-box{
-       font-size: 1.5rem;
-    }
-}
