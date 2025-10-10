@@ -1,0 +1,181 @@
+html{
+    font-size: 12px;
+    line-height: 1.5;
+    background-color: white;
+}
+
+@font-face {
+    font-family:'Foul-Feind';
+    src: url(fonts/Foul\ Fiend.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'AveriaSerif';
+    src: url(fonts/AveriaSerif-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'AveriaSerif-bold';
+    src: url(fonts/AveriaSerif-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family:'AveriaSerif-light';
+    src: url(fonts/AveriaSerif-Light.ttf);
+    font-weight:lighter;
+}
+
+
+@font-face {
+    font-family:'Pirata';
+    src: url(fonts//PirataOne-Regular.ttf);
+    font-weight: normal;
+}
+
+#newfont{
+    font-family: 'Foul-Feind';
+}
+
+#newfont{
+    font-family: 'AveriaSerif';
+}
+
+#newfont{
+    font-family: 'Pirata';
+}
+
+
+#big-div{
+    background-color: rgb(57, 0, 0);
+    width: 918px;
+    height: 1186px;
+    margin:auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+
+}
+
+
+
+#flex-container2{
+display: flex;
+    justify-content:space-between;
+flex-direction: column;
+
+
+}
+
+.outer-div{
+    width: calc(424px - 5lh);
+    padding: 1lh;
+    margin-left: 1lh;
+    margin-right: 1lh;
+float:left;
+
+}
+
+.categories{
+        color: rgb(255, 255, 255);
+    font-family: Pirata;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.inner-div{
+    padding-top: .5lh;
+}
+
+.food-price{
+    display:flex;
+    justify-content: space-between;
+}
+
+#header{
+    color: rgb(255, 255, 255);
+    font-family: Foul-Feind;
+    font-size: 6rem;
+    text-align: center;
+margin-top: .5lh;
+    margin-bottom: .3lh;
+}
+
+.food{
+    color: rgb(255, 255, 255);
+    font-family: AveriaSerif;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.price{
+    color: rgb(255, 255, 255);
+    font-family: AveriaSerif;
+    font-weight: normal;
+    font-size: 1.5rem;
+
+}
+
+.food-description{
+    font-size: 1rem;
+    color: rgb(187, 132, 132);
+    font-family: AveriaSerif;
+    font-weight: lighter;
+}
+
+
+.right{
+float: right;
+}
+
+.left{
+    float:left;
+}
+
+
+
+.image-style{
+    width: calc(424px - 6lh);
+    height: calc(348px - 6lh);
+float: left;
+border: .5lh rgb(187, 132, 132);
+border-style:double;
+border-radius: 1lh;
+margin-right: 1.25lh;
+margin-top: 1.5lh;
+margin-bottom: 1.25lh;
+}
+
+.image-style-left{
+    margin-right: 0px;
+    margin-left: 1lh;
+}
+
+.image-border{
+height: 100%;
+    width: 60px;
+    display: flex;
+    float: left;
+}
+
+.image-border2{
+height: 100%;
+    width: 60px;
+    display: flex;
+    float: right;
+}
+
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.underline{
+    height: 2px;
+    width: 100%;
+    background-color: rgb(187, 132, 132);
+    margin-bottom: .5lh;
+}
