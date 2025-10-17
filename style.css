@@ -3,6 +3,12 @@
 html{
     background-color: #2e004d;
     line-height: 1.5;
+    list-style-type: none;
+}
+
+li{
+    list-style-type: none;
+    padding-left: 0px;
 }
 
 .text{
