@@ -1,0 +1,119 @@
+html{
+  font-size: 40px;
+  line-height: 1.5;
+  height: 100%;
+}
+
+body{
+  height:100%;
+}
+
+.spinning-word1:hover {
+  display: inline-block; 
+  animation: spin 1s linear infinite;
+
+}
+
+.spinning-word2:hover {
+  display: inline-block; 
+  animation: spin 1s linear infinite;
+
+}
+
+.spinning-word3:hover {
+  display: inline-block; 
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#spinningParagraph1{
+  max-width: 1500px;
+  background-color: aquamarine;
+  padding-bottom: 20px;
+}
+
+#spinningParagraph2{
+  max-width: 1500px;
+  background-color: aquamarine;
+}
+
+#spinningParagraph3{
+  max-width: 1500px;
+  background-color: aquamarine;
+  padding-top: 20px;
+}
+
+#text-left{
+
+  background-color: azure;
+  font-size: 2lh;
+  vertical-align: bottom;
+  text-align: center;
+  position: absolute;
+  
+}
+
+#text-left span 
+{
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+}
+
+#flexbox{
+
+  background-color: rgba(127, 127, 255, 0.067);
+width:500px;
+height: 100%;
+}
+
+
+
+#LetterBox{
+width: fit-content;
+height: fit-content;
+padding: 10%;
+}
+
+#LetterBox2{
+width: fit-content;
+height: fit-content;
+bottom: 0;
+right: 0;
+margin-bottom: 0;
+float: right;
+border-top: 20px black;
+border-left: 20px black;
+border-style: double;
+border-bottom: 0;
+border-right: 0;
+padding-top: 7px;
+padding-left: 7px;
+}
+
+#flexbox-container{
+display: flex;
+height: 100vh;
+justify-content: space-between;
+align-items: flex-end;
+}
+
+.borders{
+  border-top: 20px black;
+border-left: 20px black;
+border-bottom: 0;
+border-right: 0;
+border-style: double;
+margin-bottom: 0;
+float: right;
+
+}
