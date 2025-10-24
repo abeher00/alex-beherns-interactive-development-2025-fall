@@ -33,6 +33,7 @@ body{
     transform: rotate(360deg);
   }
 }
+
 #spinningParagraph1{
   max-width: 1500px;
   background-color: aquamarine;
@@ -57,6 +58,7 @@ body{
   vertical-align: bottom;
   text-align: center;
   position: absolute;
+  margin-top: 50px;
   
 }
 
@@ -72,8 +74,10 @@ body{
 #flexbox{
 
   background-color: rgba(127, 127, 255, 0.067);
-width:500px;
+
 height: 100%;
+display: flex;
+align-self:flex-end;
 }
 
 
@@ -82,6 +86,7 @@ height: 100%;
 width: fit-content;
 height: fit-content;
 padding: 10%;
+
 }
 
 #LetterBox2{
@@ -115,5 +120,26 @@ border-right: 0;
 border-style: double;
 margin-bottom: 0;
 float: right;
+
+}
+
+
+.skipleft{
+
+ width: 0;
+ height: 0;
+ border-top: 50px solid transparent;
+ border-right: 100px solid red;
+ border-bottom: 50px solid transparent;
+    
+}
+
+.skipintersect{
+left:20;
+
+}
+
+#skipbuttonleft{
+  position:absolute;
 
 }
