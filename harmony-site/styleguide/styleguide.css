@@ -6,6 +6,7 @@ html{
 
 body{
   height:100%;
+margin:0px;
 }
 
 .spinning-word1:hover {
@@ -74,7 +75,8 @@ body{
 #flexbox{
 
   background-color: rgba(127, 127, 255, 0.067);
-
+width: 20%;
+min-width: 200px;
 height: 100%;
 display: flex;
 align-self:flex-end;
@@ -96,13 +98,14 @@ bottom: 0;
 right: 0;
 margin-bottom: 0;
 float: right;
-border-top: 20px black;
-border-left: 20px black;
-border-style: double;
+border-top: 10px black;
+border-left: 10px black;
+border-style: groove;
 border-bottom: 0;
 border-right: 0;
-padding-top: 7px;
-padding-left: 7px;
+padding-top: 10px;
+padding-left: 10px;
+
 }
 
 #flexbox-container{
@@ -113,14 +116,15 @@ align-items: flex-end;
 }
 
 .borders{
-  border-top: 20px black;
-border-left: 20px black;
+  border-top: 10px black;
+border-left: 10px black;
 border-bottom: 0;
 border-right: 0;
-border-style: double;
+border-style: groove;
 margin-bottom: 0;
 float: right;
-
+padding-left: 10px;
+padding-top: 10px;
 }
 
 
@@ -135,11 +139,45 @@ float: right;
 }
 
 .skipintersect{
-left:20;
-
+  position:absolute;
+left: 55px;
+bottom: 0px;
 }
 
 #skipbuttonleft{
-  position:absolute;
-
+position: relative;
+margin: 20px;
 }
+
+
+#outer-div{
+  height: 100%;
+}
+
+
+
+.skipright{
+ width: 0;
+ height: 0;
+ border-top: 50px solid transparent;
+ border-left: 100px solid red;
+ border-bottom: 50px solid transparent;
+    
+}
+
+.skipintersect2{
+  position:absolute;
+left: -55px;
+bottom: 0px;
+}
+
+#skipbuttonright{
+position: relative;
+margin: 20px;
+}
+
+#buttonscontainer{
+  display: flex;
+  justify-content: space-between;
+}
+
