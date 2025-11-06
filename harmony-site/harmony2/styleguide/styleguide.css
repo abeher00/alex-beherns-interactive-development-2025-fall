@@ -9,43 +9,24 @@ body{
 margin:0px;
 }
 
-    .spinningword1:hover {
-      display: inline-block; 
-      animation: spin .5s infinite linear;
+.spinning-word1:hover {
+  display: inline-block; 
+  animation: spin 1s linear infinite;
 
-    }
-
-    .spinningword2:hover {
-      display: inline-block; 
-      animation: spin .5s linear infinite;
-
-    }
-
-    .spinningword3:hover {
-      display: inline-block; 
-      animation: spin .5s linear infinite;
-    }
-
-
-    .infinitespin1 {
-      display: inline-block; 
-      animation: spin .5s infinite linear;
-
-    }
-
-
-
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
-@keyframes spin2 {
+.spinning-word2:hover {
+  display: inline-block; 
+  animation: spin 1s linear infinite;
+
+}
+
+.spinning-word3:hover {
+  display: inline-block; 
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
   0% {
     transform: rotate(0deg);
   }
