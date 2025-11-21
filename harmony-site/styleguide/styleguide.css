@@ -76,50 +76,44 @@ margin:0px;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  white-space: nowrap;
+/*   white-space: nowrap; */
 }
 
 #flexbox{
 
-  background-color: rgba(127, 127, 255, 0.067);
+background-color: rgba(127, 127, 255, 0.067);
 width: 20%;
 min-width: 200px;
 height: 100%;
-display: flex;
+display: inline-block;
+position:relative;
+top:0;
+/* display: flex;
 align-self:flex-end;
-align-items: flex-end;
+align-items: flex-end; */
 }
 
 
 
 #LetterBox{
 width: fit-content;
-padding: 10%;
-
+padding: calc(2rem + 5%);
 }
 
 #LetterBox2{
 width: fit-content;
 height: fit-content;
-bottom: 0;
-right: 0;
-margin-bottom: 0;
-float: right;
-border-top: 10px black;
-border-left: 10px black;
-border-style: groove;
-border-bottom: 0;
-border-right: 0;
-padding-top: 10px;
-padding-left: 10px;
-margin-left: 40px;
+display: inline-block;
+position: relative;
+
 }
 
 #flexbox-container{
-display: flex;
-height: 100vh;
-justify-content: space-between;
-align-items: flex-end;
+display: inline-block;
+position:fixed;
+bottom:0;
+right: 0;
+margin-left:6rem;
 }
 
 .borders{
@@ -129,7 +123,6 @@ border-bottom: 0;
 border-right: 0;
 border-style: groove;
 margin-bottom: 0;
-float: right;
 padding-left: 10px;
 padding-top: 10px;
 }
@@ -153,8 +146,8 @@ bottom: 0px;
 
 #skipbuttonleft{
 position: relative;
-margin: 50px;
-margin-right: 60px;
+display: inline-block;
+margin-right: calc(2rem + 5%);
 }
 
 
@@ -181,8 +174,8 @@ bottom: 0px;
 
 #skipbuttonright{
 position: relative;
-margin: 50px;
-margin-left: 60px;
+display: inline-block;
+margin-left: calc(2rem + 5%);
 }
 
 
@@ -190,32 +183,40 @@ margin-left: 60px;
   height: 100px;
   width: 100px;
 background-color: red;
-margin-top: 50px;
-margin-bottom: 50px;
-margin-left: 100px;
-margin-right: 100px
+display:inline-block;
+position:relative;
 }
 
 
 #buttonscontainer{
-  display: flex;
+  display: inline-block;
+  position: absolute;
+  width:100%;
+  top: calc(-4rem - 5%);
 }
 
 #menu-button{
   font-size: 1.5rem;
   padding-left: 40px;
-  padding-bottom: 40px;
+  display: inline-block;
+  position: fixed;
+  bottom:0;
 }
 
 
 #button-text-container{
-display:flex;
-flex-direction: column;
+/* display:flex;
+flex-direction: column; */
 height: 100%;
-justify-content: flex-end;
+/* justify-content: flex-end; */
 }
 
+#button-and-text-box{
 
+  position: relative;
+  display:inline-block;
+
+}
 
 
 /* @media screen and (min-width: 1563px){
@@ -263,35 +264,11 @@ justify-content: flex-end;
 
 
 
-@media screen and (min-width: 924px){
-    #stop-button{
-  height: 100px;
-  width: 100px;
-background-color: red;
-margin-top: 50px;
-margin-bottom: 50px;
-margin-left: 100px;
-margin-right: 100px
-    }
-}
-
-@media screen and (max-width: 923px){
-    #stop-button{
-         height: 50px;
-  width: 50px;
-background-color: red;
-margin-top: 50px;
-margin-bottom: 50px;
-margin-left: 50px;
-margin-right: 50px;
-    }
-}
 
 
 
-
-@media screen and (min-width: 924px){
-    .skipright{
+@media screen and (min-width: 1301px){
+    .skipright, .skipintersect2, #stop-button{
  width: 0;
  height: 0;
  border-top: 50px solid transparent;
@@ -300,8 +277,8 @@ margin-right: 50px;
     }
 }
 
-@media screen and (max-width: 923px){
-    .skipright{
+@media screen and (max-width: 1300px){
+    .skipright, .skipintersect2, #stop-button{
  width: 0;
  height: 0;
  border-top: 25px solid transparent;
@@ -309,6 +286,69 @@ margin-right: 50px;
  border-bottom: 25px solid transparent;
     }
 }
+
+
+@media screen and (min-width: 1301px){
+    .skipintersect2{
+  position:absolute;
+left: -55px;
+bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .skipintersect2{
+  position:absolute;
+left: -27.5px;
+bottom: 0px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1301px){
+    .skipleft, .skipintersect{
+ width: 0;
+ height: 0;
+ border-top: 50px solid transparent;
+ border-right: 100px solid red;
+ border-bottom: 50px solid transparent;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .skipleft, .skipintersect{
+ width: 0;
+ height: 0;
+ border-top: 25px solid transparent;
+ border-right: 50px solid red;
+ border-bottom: 25px solid transparent;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1301px){
+    .skipintersect{
+  position:absolute;
+left: 55px;
+bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .skipintersect{
+  position:absolute;
+left: 27.5px;
+bottom: 0px;
+    }
+}
+
+
+
+
 
 
 
@@ -324,3 +364,4 @@ margin-right: 50px;
        font-size: .9rem;
     }
 } */
+
