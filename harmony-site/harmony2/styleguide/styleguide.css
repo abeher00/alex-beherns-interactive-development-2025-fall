@@ -97,10 +97,12 @@ margin-left: calc(17rem * 1.5);
 border-left: 10px rgb(25, 30, 40);
 border-bottom: 0;
 border-right: 0;
-border-style:solid;
+border-style:hidden;
 margin-bottom: 0;
-padding-left: 10px;
-padding-top: 10px;
+padding-left: 20px;
+padding-top: 20px;
+box-shadow: inset 2px 2px 10px rgb(29, 25, 44) ;
+border-radius: 2rem;
 }
 
 
@@ -130,6 +132,7 @@ margin-right: calc(5rem + 5%);
 #outer-div{
   height: 100%;
   background-image: linear-gradient(to bottom, rgb(48, 53, 63), rgb(131, 157, 170),  rgb(48, 53, 63));
+  box-shadow: inset 0px 0px 20px rgb(29, 25, 44) ;
 }
 
 
