@@ -330,19 +330,6 @@ bottom: 0px;
 
 
 
-@media screen and (min-width: 1301px){
-    #buttonscontainer{
-  top: calc(-8rem - 5%);
-    }
-}
-
-@media screen and (max-width: 1300px){
-    #buttonscontainer{
-  top: calc(-4rem - 5%);
-    }
-}
-
-
 
 
 @media screen and (min-width: 551px){
@@ -412,6 +399,19 @@ margin-left: calc(3rem + 5%);
 }
 
 
+
+
+@media screen and (min-width: 1301px){
+    #buttonscontainer{
+  top: calc(-8rem - 5%);
+    }
+}
+
+@media screen and (max-width: 1300px){
+    #buttonscontainer{
+  top: calc(-4rem - 5%);
+    }
+}
 
 
 
